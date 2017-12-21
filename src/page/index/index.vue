@@ -45,12 +45,13 @@
     methods: {
 
       getIndexData () {
-        this.$http.get('/static/index.json')
+        this.$http.get('/pi')
           .then(this.handleGetDataSucc.bind(this))
       },
 
       handleGetDataSucc (res) {
         const body = res.body
+        console.log(body)
         if (body && body.data && body.data.swiper) {
           this.swiperInfo = body.data.swiper
           this.iconInfo = body.data.icons
