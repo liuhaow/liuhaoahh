@@ -45,7 +45,7 @@
     methods: {
 
       getIndexData () {
-        this.$http.get('/pi')
+        this.$http.get('/static/index.json')
           .then(this.handleGetDataSucc.bind(this))
       },
 

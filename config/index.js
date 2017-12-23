@@ -11,12 +11,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        '/pi': {
+        /*'/pi': {
         target: 'http://localhost:3000',
         pathRewrite: {
             '/pi': '/api'
         }
-        }
+        }*/
     },
 
     // Various Dev Server settings
